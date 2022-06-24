@@ -1,12 +1,13 @@
 import { fastify } from 'fastify';
-import 'dotenv/config'
 
 const server = fastify();
-const Port = 7000;
+const config = {
+    port: 7000
+};
 
 const start = async () => {
     try {
-        server.listen(Port);
+        server.listen(config);
         console.log('Server started successfully');
     } catch (err) {
         server.log.error(err);
