@@ -1,0 +1,34 @@
+{
+  "name": "budget-tracker",
+  "version": "1.0.0",
+  "description": "Categorizes the expenses",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshbala2008/budget-tracker.git"
+  },
+  "keywords": [
+    "expense"
+  ],
+  "author": "Ganesh Balajii Loganathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganeshbala2008/budget-tracker/issues"
+  },
+  "homepage": "https://github.com/ganeshbala2008/budget-tracker#readme",
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "dotenv": "^16.0.1",
+    "fastify": "^4.1.0",
+    "fastify-plugin": "^3.0.1",
+    "nodemon": "^2.0.18",
+    "openapi-validator-middleware": "^3.2.6",
+    "typescript": "^4.7.4"
+  }
+}
